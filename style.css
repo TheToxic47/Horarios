@@ -1,0 +1,234 @@
+@font-face {
+    font-family: raleway;
+    src: url(fonts/raleway.woff2) format('woff2');
+    font-style: normal;
+}
+@font-face{
+    font-family: corinthia;
+    src: url(fonts/corinthia.woff2) format('woff2')
+}
+@font-face{
+    font-family: kdam;
+    src: url(fonts/kdam.woff2) format('woff2');
+}
+@font-face{
+    font-family: neue;
+    src: url(fonts/neue.woff2) format('woff2');
+}
+:root{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #020117;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.toxic13{
+    display: flex;
+}
+.bordeneon{
+    position:  relative;
+    color: #fff;
+    background-color: #020117;
+    letter-spacing: .5 px;
+}
+.bordeneon::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -1;
+}
+.bordeneon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #ffd800, #ff5520, #750cf2, #0cbcf2);
+    z-index: -2;
+    filter: blur(40px);
+
+}
+.fondo-3{
+    background: linear-gradient( 125Deg, #380036, #020117);
+    border-radius: 10px;
+    
+}
+
+
+.lista{
+    position: relative;
+    width: cover;
+    max-width: 300px;
+    min-height: 500px;
+    box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
+    10px 10px 70px rgba(0,0,0,0.25),
+}
+.itemlista{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 12px 0;
+    cursor: pointer;
+}
+.itemlista::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(
+        to right, #EA52F8, #0066FF
+    );
+    border-radius: 22.5px;
+     transition: 0.5s;
+}
+.itemlista:hover::before{
+    width: 100%;
+}
+.itemlista .rank{
+    position: relative;
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.itemlista .rank::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #0066FF;
+    border-radius: 30px;
+    transform: scale(0);
+    transition: 0.5s;
+}
+.itemlista:hover .rank::before {
+    transform: scale(1);
+}
+.itemlista .rank span{
+    position: relative;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+.itemlista .name {
+    position: relative;
+    line-height: 1.15rem;
+}
+.itemlista .name h4{
+    font-weight: 600;
+    color: #bcbcc0;
+    transition: 0.5s;
+}
+.itemlista:hover .name h4{
+    color: #fff;
+}
+
+.blur{
+    backdrop-filter: blur(5px);
+
+}
+.titulo12{
+    text-shadow: red -2px 0,
+                 cyan 2px 0;
+                 text-decoration: underline 3px;
+}
+.act{
+    font-family: neue;
+    font-size: 600%;
+    background: linear-gradient(
+        to right,
+        rgb(0, 162, 255),
+        rgb(0, 255, 85)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+.showcase{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    text-shadow: red -2px 0,
+                 cyan 2px 0;
+                 text-decoration: underline 3px;
+    background-color: #020117;
+}
+.degradado{
+    background: linear-gradient(180deg, #000000, #000000,#000000, #020117);
+}
+.video{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.showcase video{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+    justify-content: center;
+    align-items: center;
+}
+.titulo1{
+    text-align: center;
+    font-family: kdam;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    font-size: 100px;
+    color: #fff;
+    mix-blend-mode: multiply;
+    user-select: none;
+}
+
+
+/*posicionamiento navgar*/
+.navbar-dark{
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.nav-link:hover {
+    background-color: #555353;
+}
+.nav-link:active{
+    background-color: #161515;
+}
+
+
+
+/*responsivo en celular*/
+@media screen and (max-width: 1400px) {
+    .navbar-dark{
+        margin-left: 0px;
+        margin-right: 0px;
+        background-color: #1b1b1b;
+    }
+    .nav-link{
+        margin-left: 10px;
+    }
+    .nav-link:hover{
+        padding-left: 10px;
+    }
+    .nav-link:active{
+        background-color: #161515;
+    }
+    
+}
