@@ -14,6 +14,7 @@
 @font-face{
     font-family: neue;
     src: url(fonts/neue.woff2) format('woff2');
+    font-family: 'Courier New', Courier, monospace;
 }
 :root{
     scroll-behavior: smooth;
@@ -57,8 +58,7 @@ body{
 }
 .fondo-3{
     background: linear-gradient( 125Deg, #380036, #020117);
-    border-radius: 10px;
-    
+    border-radius: 10px;   
 }
 
 
@@ -66,7 +66,7 @@ body{
     position: relative;
     width: cover;
     max-width: 300px;
-    min-height: 500px;
+    min-height: 300px;
     box-shadow: 25px 25px 75px rgba(0,0,0,0.25),
     10px 10px 70px rgba(0,0,0,0.25),
 }
@@ -135,7 +135,6 @@ body{
 .itemlista:hover .name h4{
     color: #fff;
 }
-
 .blur{
     backdrop-filter: blur(5px);
 
@@ -230,5 +229,4 @@ body{
     .nav-link:active{
         background-color: #161515;
     }
-    
 }
